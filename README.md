@@ -54,6 +54,53 @@ Open Command Prompt in the project directory and run:
 python -m pip install -r requirements.txt
 ```
 
+## How to Run JARVIS
+
+### Requirements
+- Windows computer
+- Python installed
+- Ollama installed
+- Llama 3.2 3B model downloaded
+- Python packages from `requirements.txt`
+
+### Setup
+
+1. Install Ollama from https://ollama.com/.
+2. Open Command Prompt and download the model:
+
+   ```bash
+   ollama pull llama3.2:3b
+   ```
+
+3. Open Command Prompt in the JARVIS project folder and install dependencies:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+4. Start JARVIS by double-clicking `jarvis.bat`.
+
+   Alternatively, run:
+
+   ```bash
+   python -m streamlit run app.py --server.address=127.0.0.1 --server.port=8501
+   ```
+
+5. Open http://127.0.0.1:8501 in your browser.
+
+### Sample Interaction
+
+**User:** Explain Python functions with an example.
+
+**Expected result:** JARVIS generates an explanation and a sample Python function using the local language model.
+
+### Screenshots
+
+![JARVIS chat interface](screenshots/jarvis-chat.png)
+
+![JARVIS PDF question answering](screenshots/jarvis-pdf-qa.png)
+
+
 ### 4. Start JARVIS
 
 **Windows quick start:** Double-click `jarvis.bat`.
@@ -73,6 +120,8 @@ Open http://127.0.0.1:8501 in your browser if it does not open automatically.
 3. Submit the message and review the response.
 4. Try uploading a supported PDF and asking a question about its contents.
 5. Test the memory, study, coding, and local utility features available in the interface.
+
+
 
 ## Offline Operation
 
